@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173e35">
+    <meta name="description" content="A little less hurry. A little more horizon. Find your next drive in Daytrip's sample car collection.">
+    <title>Daytrip — Take the long way home</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body id="top">
+    <div class="reading-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#cars">Skip to cars</a>
+    <header class="site-header page-width">
+      <a class="brand" href="./" aria-label="Daytrip home">
+        <img src="assets/mark.svg" width="36" height="36" alt="">
+        daytrip<span class="brand-dot">.</span>
+      </a>
+      <p class="header-note">A little freedom goes a long way.</p>
+      <nav aria-label="Main navigation">
+        <a href="#cars">The collection <span aria-hidden="true">↗</span></a>
+        <span class="demo-badge">A rental demo</span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-sun" aria-hidden="true">✳</span> For the joy of getting there</p>
+          <h1 id="hero-title" aria-label="Take the long way home."><span class="headline-line"><span>Take the</span></span><span class="headline-line"><em>long way</em></span><span class="headline-line"><span>home<span class="title-dot">.</span></span></span></h1>
+          <div class="hero-bottom">
+            <p class="hero-description">A change of scenery starts with a set of keys.<br>Find a car for the everyday. And the days away.</p>
+            <a class="primary-link" href="#cars"><span>Find your next drive</span><span class="button-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span class="short-rule" aria-hidden="true"></span> Three cars. Endless daydreams.</div>
+        </div>
+
+        <div class="hero-art">
+          <div class="scene-visual" aria-label="Illustration of a sage green sedan on a winding coastal road" role="img">
+            <div class="scene-scroll"><div class="scene-layer">
+              <div class="scene-backdrop">
+              <img class="landscape" src="assets/coastal-road.svg" width="840" height="980" alt="">
+              <svg class="scene-overlay" viewBox="0 0 840 980" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <circle class="scene-halo" cx="610" cy="170" r="112" fill="none" stroke="#edf1b4" stroke-width="1.5" opacity=".6"/>
+                <path class="scene-route" d="M-66 1018C-42 806 117 687 384 644C767 583 991 485 697 394C432 312 530 165 905 228" fill="none" stroke="#f0f4a6" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+                <g class="scene-birds" fill="none" stroke="#e6e8ba" stroke-width="2" stroke-linecap="round"><path d="m368 156 11-3 9 6m-60 22 8-3 8 5m79-59 9-2 6 4"/></g>
+              </svg>
+              </div>
+              <div class="hero-car-position"><div class="hero-car-drift"><img class="hero-car" src="assets/sedan.svg" width="640" height="300" alt=""></div></div>
+            </div></div>
+          </div>
+          <div class="scene-topline" aria-hidden="true"><span>DAYTRIP FIELD NOTES</span><span>NO. 001</span></div>
+          <div class="scene-stamp" aria-hidden="true"><span>LESS HURRY</span><svg viewBox="0 0 50 50" width="45" height="45"><path d="M25 4v42M4 25h42M10 10l30 30M10 40l30-30" stroke="currentColor" stroke-width="2"/></svg><span>MORE HORIZON</span></div>
+          <div class="scene-caption" aria-hidden="true"><span>Somewhere<br>worth the detour.</span><span class="scene-coordinate">THE EVERYDAY ESCAPE<br>ILLUSTRATED JOURNEYS — 01</span></div>
+          <div class="scene-controls" hidden>
+            <button id="replay-scene" type="button"><span aria-hidden="true">↻</span> Replay scene</button>
+            <button id="toggle-motion" type="button" aria-pressed="false"><span class="motion-control-icon" aria-hidden="true">Ⅱ</span><span class="motion-control-label">Pause motion</span></button>
+          </div>
+        </div>
+      </section>
+
+      <div class="journey-strip page-width" aria-hidden="true"><span>Good company.</span><span class="strip-star">✳</span><span>A new perspective.</span><span class="strip-star">✳</span><span>The open road.</span><a href="#cars" tabindex="-1">SCROLL TO EXPLORE <span>↓</span></a></div>
+
+      <section class="catalog page-width" id="cars" aria-labelledby="catalog-title" tabindex="-1">
+        <div class="section-heading" data-reveal>
+          <div><p class="eyebrow"><span class="section-number">01 /</span> The collection</p><h2 id="catalog-title">Small fleet.<br><em>Big possibilities.</em></h2></div>
+          <div class="collection-intro"><p>City streets, coastal roads, or the scenic route.<br>Pick the one that feels like your kind of day.</p><span class="currency-note"><span aria-hidden="true">↳</span> 3 sample cars · Daily rates in USD</span></div>
+        </div>
+        <p id="catalog-status" role="status">Loading sample cars…</p>
+        <noscript><p>Enable JavaScript to explore the sample cars and their details.</p></noscript>
+        <div class="car-grid" id="car-list"></div>
+      </section>
+
+      <aside class="demo-note page-width" id="about" aria-labelledby="demo-title" data-reveal>
+        <div class="note-symbol" aria-hidden="true">↗</div>
+        <div><p class="eyebrow">A work in progress. A world of possibilities.</p><h2 id="demo-title">Just exploring? <em>So are we.</em></h2></div>
+        <p>Daytrip is a car rental concept. These cars and prices are fictional, and reservations aren’t available yet. For now, enjoy a little window shopping.</p>
+      </aside>
+    </main>
+
+    <footer class="site-footer page-width">
+      <a class="brand footer-brand" href="./" aria-label="Daytrip home">daytrip<span class="brand-dot">.</span></a>
+      <p>Made for the journey.</p>
+      <a class="back-top" href="#top" id="back-top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+
+    <template id="car-template">
+      <article class="car-card" data-reveal>
+        <div class="car-art">
+          <div class="car-art-top"><span class="category-pill"></span><span class="car-index" aria-hidden="true"></span></div>
+          <span class="car-backdrop" aria-hidden="true"></span>
+          <span class="car-shine" aria-hidden="true"></span>
+          <img width="640" height="300" alt="" loading="lazy">
+          <p class="car-tagline"></p>
+        </div>
+        <div class="card-body">
+          <h3></h3>
+          <p class="car-summary"></p>
+          <div class="card-bottom">
+            <p class="price"><strong></strong><span> / day</span></p>
+            <button class="details-button" type="button"><span>Meet the car</span><span class="detail-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <dialog id="car-dialog" aria-labelledby="detail-title" aria-describedby="detail-description">
+      <form method="dialog" class="dialog-close"><button class="close-button" autofocus aria-label="Close car details"><span aria-hidden="true">×</span></button></form>
+      <div class="detail-layout">
+        <div class="detail-art"><p class="eyebrow">The Daytrip collection</p><span class="detail-art-word" aria-hidden="true">Let’s go.</span><img id="detail-image" width="640" height="300" alt=""><p class="detail-art-caption">A good day is just around the bend.</p></div>
+        <div class="detail-body">
+          <p class="eyebrow" id="detail-category"></p>
+          <h2 id="detail-title"></h2>
+          <p id="detail-description"></p>
+          <dl class="specifications">
+            <div><dt>Seats</dt><dd id="detail-seats"></dd></div>
+            <div><dt>Transmission</dt><dd id="detail-transmission"></dd></div>
+            <div><dt>Luggage</dt><dd id="detail-luggage"></dd></div>
+          </dl>
+          <div class="detail-rate"><p class="detail-price"><strong id="detail-price"></strong><span> USD / day</span></p><span class="sample-label">SAMPLE RATE</span></div>
+          <p class="detail-note">A little inspiration for your next escape.<br>Sample vehicle and price. Reservations are not available yet.</p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

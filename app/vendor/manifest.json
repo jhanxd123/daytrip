@@ -1,0 +1,20 @@
+{
+  "animejs": {
+    "version": "4.5.0",
+    "source": "https://registry.npmjs.org/animejs/-/animejs-4.5.0.tgz",
+    "integrity": "sha512-NQimYX+lz8WaXonGS9zVVoviCIAjONeJayxacUditaivYLqyXgGjFKjuyl0aUUhFKm5MriX9ty1TGovNzoJQWA==",
+    "files": {
+      "animejs-4.5.0.esm.js": "a19015a1a92d52025a2fb6703b6d67eadd1cc2aeaf880770e96e04cf6aa07be1",
+      "animejs-LICENSE.md": "3f3e835a9952cfc2a6ca836fb95b3257c981f24fa3ef51249055acb09931897b"
+    }
+  },
+  "motion": {
+    "version": "14.1.0",
+    "source": "https://registry.npmjs.org/motion/-/motion-14.1.0.tgz",
+    "integrity": "sha512-lsCsW9uJ+iMJj8MSiLccpUC+ZUpoSspaX6Pm78KrnZKMioCPAPG6WeG1d1d/Ywg+z1mny+STP6VyEYW+3nAqNw==",
+    "files": {
+      "motion-14.1.0.js": "1efa29adbb0d9a4452592adf84eb819ef05616e25a830c85ab8965bcbba79efa",
+      "motion-LICENSE.md": "1bf0dc3f7727723e5a032ed12164a47cf92c05204cb1a3485f123c24e2833ed1"
+    }
+  }
+}
